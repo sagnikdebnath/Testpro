@@ -1,0 +1,119 @@
+placeholder,autofocus,autocomplete,required,pattern,list,multiple,novalidate,formnovalidate,form,formaction,formenctype,formmethod,formtarget
+
+label er sathe input conect karar janna for er sathe Id math karano hay use kara hay
+<label for="rr">RRR</label>
+<input type="text" id="rr">
+------------------
+Autofocus er janny...autofocus use hay jodi 2tote thake tahole 1st ta dhorbe
+<input type="text" name="first-name" id="first-name" autofocus>
+--------------------
+Input Type Radio er janna 2to radio button er name same habe---
+<fieldset>
+<legend>Gender *</legend>
+  <input type="radio" name="gender" value="male" id="male">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" value="female" id="female">
+  <label for="female">Female</label>
+</fieldset>
+-----------------------
+Number pattern er janna
+<input type="number" pattern="[0-9]*" maxlength="5" min="0" name="zip" id="zip">
+-----------------------
+Auto complet off karar janna
+autocomplete="off"
+-----------------------
+Deta list er janna list er sathe Id match karano hay
+<label for="inpChocType">Chocolates</label>
+<input type="text" id="inpChocType" list="chocType">
+<datalist id="chocType">
+  <option value="white" />
+  <option value="milk" />
+  <option value="dark" />
+</datalist>
+-----------------------
+Multiple Upload file er janna---
+<label>Upload files: <input type="file" multiple name="upload"></label>
+-----------------------
+Auto validation er janna 
+<input type="text" name="lname" id="lname" required>
+-----------------------
+formtarget
+formtarget specifies the target window for the form results.
+<input type="submit" value="Submit" formtarget="_self">
+----------------------
+header er modhhe footer / footer er modhhe header neoya jabena
+section er modhhe -->header, footer, aside, article neoya jabe
+article er modhhe -->header, footer, aside, section neoya jabe
+article, section er modhhe direct kono tag use kora jabe na age h1/h2,h3-- tag use habe...
+ h1 tag ekbari use kara jabe ekta Semantic Elements e
+---------------------
+Ios Defalt appearance none karar janna
+-webkit-appearance: none;
+-----------------------
+Width % -px-----> width:calc(100% - 300px);
+-----------------------
+How many way eliment Horizentaly Center
+text-align: center;
+justify-content: center;
+-----------------------
+How many way eliment Varticaly Center
+display: table-cell; vertical-align: middle;
+align-items: center; display:inline-block;
+position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0; width: 100px; height: 100px; background-color: #ccc; border-radius: 3px;
+---------------------------
+Flex Property
+--Contaner---
+display: flex;
+flex-direction: row | row-reverse | column 
+flex-wrap: nowrap | wrap
+justify-content:flex-start | flex-end | center | space-between | space-around | space-evenly;(Horizental align)
+align-items:stretch | flex-start | flex-end | center | baseline;
+align-content:flex-start | flex-end | center | space-between | space-around | stretch;(aligns individual items within the main-axis.| this property has no effect when there is only one line of flex items.)
+--Item---
+order: default is 0 
+flex-grow: /* default 0 */(Negative numbers are invalid.)
+align-self:auto | flex-start | flex-end | center | baseline | stretch;
+
+--------------------------- Question ---------------------------
+The CSS box model is a rectangular layout paradigm for HTML elements that consists of the following:?
+Content, Padding, Border, Margin
+
+Explain what elements will match each of the following CSS selectors:?
+div + p - Selects all <p> elements that are placed immediately after a <div> element
+div ~ p - Selects all <p> elements that are anywhere preceded by a <div> element
+
+In CSS3, how would you select:
+<a> element value begins with “https”: a[href^="https"]
+<a> element href value ends with “.pdf”:a[href$=".pdf"]
+<a> element href value substring “css”:a[href*="css"]
+-------------------------------------------------
+CSS counter-increment and counter-reset in CSS
+<div id="page">
+  <h1>Heading Title</h1>
+     <h2>Subheading Title</h2>
+     <h2>Subheading Title</h2>
+  <h1>Heading Title</h1>
+    <h2>Subheading Title</h2>
+  <h1>Heading Title</h1>
+</div>
+#page {counter-reset: heading;}
+h1:before {content: counter(heading)") "; counter-increment: heading;}
+h1 {counter-reset: subheading;}
+h2:before {content: counter(heading)"." counter(subheading)") "; counter-increment: subheading;}
+---------------------------
+CSS media queries are the filters that make responsive web design
+@media screen and (max-width: 800px) { … }
+---------------------------
+What is a CSS preprocessor?
+A preprocessor is an abstraction layer built on top of CSS. 
+mixins. Sass, LESS
+---------------------------
+What are CSS vendor prefixes?
+-webkit-: Android, Chrome, iOS, and Safari
+-moz-: Mozilla Firefox
+-ms-: Internet Explorer
+-o-: Opera
+---------------------------
+How do you define a pseudo class in CSS?
+a:hover
