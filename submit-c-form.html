@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>C-Form</title>
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet"> 
+    <link href="css/chosen.css" rel="stylesheet"> 
+      
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div class="container-scroller">
+        <nav class="navbar">  <!-- default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row -->
+        <a class="navbar-brand" href="index.html">C-Form</a>
+        <div class="navbar-header">
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">34 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    User Name
+                                </div>
+                            </a>
+                        </li>                        
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> Logout
+                                </div>
+                            </a>
+                        </li>
+                    </ul>                        
+                </li>
+            </ul>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>            
+        </nav>
+        <div class="container-fluid page-body-wrapper">
+            <nav class="sidebar sidebar-offcanvas">
+                <div class="sidebar-nav navbar-collapse collapse">
+                    <ul class="nav" id="side-menu">
+                        <li><a href="index.html"><i class="fa fa-bar-chart-o fa-fw"></i> Dashboard</a></li>
+                        <li><a href="index.html"><i class="fa fa-table fa-fw"></i> Bookings</a></li>
+                        <li><a href="index.html" class="active"><i class="fa fa-edit fa-fw"></i> Submit C-Form</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main-panel">
+                <div class="content-wrapper">
+                <h3 class="page-header">Submit C-Form</h3> 
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                            <form>
+                              <div class="form-row">
+                                <div class="col-md-6">
+                                  <label for="inputEmail4">Email</label>
+                                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputPassword4">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="col-md-6">
+                                  <label for="inputEmail4" class="dblock">Gender</label>
+                                        <label class="checkbox-inline">
+                                            <input type="radio" checked="checked" name="rr">Male
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="radio" name="rr">Female
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="radio" name="rr">Other
+                                        </label>
+
+                                </div>
+                                <div class="col-md-6">
+                                  <div for="file" class="form-control"><input type="file" class="form-control-file" id="file" placeholder="Upload"></div>
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                  <div class="col-md-12">
+                                    <label for="inputAddress">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                  </div>
+                              </div>
+                              <div class="form-row">
+                                  <div class="col-md-12">
+                                    <label for="inputAddress2">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                  </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="col-md-6">
+                                  <label for="inputCity">City</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="inputState">State</label>
+                                  <!-- <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>Option 001</option>
+                                    <option>Option 002</option>
+                                    <option>Option 003</option>
+                                  </select> -->
+                    <select class="chosen-select-no-results form-control" id="priority" name="priority">
+                        <option>Select Priority</option>
+                        <option>High</option>
+                        <option>Low</option>
+                        <option>Medium</option>
+                    </select>                                  
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="inputZip">Zip</label>
+                                    
+                                  <input type='text' class="form-control" id='datetimepicker4'/>
+                                </div>
+                              </div>
+                              <div class="form-row">
+                              <div class="col-md-2">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                                  <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                  </label>
+                                </div>
+                              </div>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Sign in</button>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+
+
+                </div>
+                <footer class="con_footer">Copyright © 2019 clematis. All rights reserved.</footer>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/chosen.jquery.js"></script> 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/custom.js"></script>   
+    <script>
+        $(document).ready(function() {
+            $('#datetimepicker4').datetimepicker();
+        })
+    </script>
+</body>
+
+</html>
